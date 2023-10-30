@@ -1,0 +1,22 @@
+service: swaggerExpressAPI #Name of your App
+
+provider:
+ name: aws
+ runtime: nodejs16.x # Node JS version
+ memorySize: 512
+ timeout: 15
+#  stage: production
+ region: us-east-1 # AWS region
+
+functions:
+ api:
+   handler: index.handler
+   events:
+    - http: 
+        path: /
+        method: ANY
+        cors: true
+    - http: 
+        path: /{proxy+}
+        method: ANY
+        cors: true

@@ -1,0 +1,33 @@
+{
+  "name": "swagger-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "serverless deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syed-ashraf123/swagger-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syed-ashraf123/swagger-express/issues"
+  },
+  "homepage": "https://github.com/syed-ashraf123/swagger-express#readme",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
+    "nodemon": "^3.0.1",
+    "serverless-express": "^2.0.12",
+    "serverless-http": "^3.2.0",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "serverless": "^3.36.0"
+  }
+}
